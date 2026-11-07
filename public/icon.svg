@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- Background with smooth rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle inner border -->
+  <rect x="4" y="4" width="504" height="504" rx="108" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity="0.15"/>
+
+  <!-- Document Sheet with shadow -->
+  <g filter="url(#shadow)">
+    <!-- White paper -->
+    <path d="M148 108 C148 94 159 84 174 84 L308 84 L368 144 L368 404 C368 418 357 428 342 428 L174 428 C159 428 148 418 148 404 Z" fill="#ffffff" />
+    <!-- Folded page corner -->
+    <path d="M308 84 L308 144 L368 144 Z" fill="#cbd5e1" />
+  </g>
+
+  <!-- Document Lines (Invoice structure) -->
+  <rect x="186" y="148" width="86" height="14" rx="7" fill="#0284c7" fill-opacity="0.3" />
+  <rect x="186" y="174" width="140" height="8" rx="4" fill="#94a3b8" fill-opacity="0.3" />
+  <rect x="186" y="192" width="110" height="8" rx="4" fill="#94a3b8" fill-opacity="0.3" />
+
+  <!-- Euro Symbol Emblem -->
+  <g transform="translate(196, 218) scale(0.68)">
+    <!-- Big Euro Sign -->
+    <path d="M125 15 C60 15 15 65 15 130 C15 195 60 245 125 245 C158 245 186 230 205 208 L175 182 C162 198 145 208 125 208 C85 208 55 175 52 138 L165 138 L165 122 L52 122 C55 85 85 52 125 52 C145 52 162 62 175 78 L205 52 C186 30 158 15 125 15 Z" fill="#0284c7" />
+    <rect x="0" y="108" width="62" height="15" rx="4" fill="#0284c7"/>
+    <rect x="0" y="136" width="62" height="15" rx="4" fill="#0284c7"/>
+  </g>
+
+  <!-- Bottom Total Bar on Invoice -->
+  <rect x="186" y="382" width="140" height="12" rx="6" fill="#0284c7" />
+</svg>

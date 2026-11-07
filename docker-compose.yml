@@ -1,0 +1,13 @@
+services:
+  erp:
+    build: .
+    container_name: gestifactu-app
+    restart: always
+    ports:
+      - "8095:8090"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+      - PORT=8090
+      - DATA_DIR=/app/data

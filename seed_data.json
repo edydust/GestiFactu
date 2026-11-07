@@ -1,0 +1,79 @@
+{
+  "company": {
+    "legalName": "Tu Empresa o Nombre",
+    "tin": "12345678Z",
+    "address": "Calle Principal 123",
+    "postcode": "28001",
+    "city": "Madrid",
+    "region": "Madrid",
+    "phone": "600000000",
+    "email": "contacto@miempresa.com",
+    "iban": "ES00 0000 0000 0000 0000 0000",
+    "defaultTax": 21,
+    "defaultRetention": 1,
+    "defaultSeries": "1",
+    "numberFormat": "{S}-{YY}-{######}"
+  },
+  "auth": {
+    "username": "admin@gestifactu.com",
+    "password": "admin"
+  },
+  "contacts": [
+    {
+      "id": 1,
+      "type": "cliente",
+      "legalName": "Cliente de Ejemplo S.L.",
+      "tin": "B12345678",
+      "email": "administracion@clienteejemplo.com",
+      "phone": "910000000",
+      "address": "Avenida de la Industria 45",
+      "postcode": "28000",
+      "city": "Madrid",
+      "region": "Madrid",
+      "paymentTerms": "Transferencia / 30 días"
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1001,
+      "number": "1-26-000001",
+      "date": "2026-10-01",
+      "issuedAt": "2026-10-01T10:00:00.000Z",
+      "customer": {
+        "legalName": "Cliente de Ejemplo S.L.",
+        "tin": "B12345678",
+        "address": "Avenida de la Industria 45, 28000 Madrid"
+      },
+      "baseAmount": 1000.00,
+      "taxPercentage": 21,
+      "taxAmount": 210.00,
+      "incomeTaxPercentage": 1,
+      "incomeTaxAmount": -10.00,
+      "totalAmount": 1200.00,
+      "paymentMethod": "Transferencia bancaria",
+      "iban": "ES00 0000 0000 0000 0000 0000",
+      "status": "cobrada",
+      "lines": [
+        {
+          "concept": "Servicios prestados de ejemplo",
+          "quantity": 1,
+          "price": 1000.00,
+          "amount": 1000.00,
+          "taxPercentage": 21,
+          "incomeTaxPercentage": 1
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "code": "SERV-01",
+      "name": "Servicios de transporte / profesionales",
+      "type": "servicio",
+      "taxPercentage": 21,
+      "incomeTaxPercentage": 1,
+      "price": 100.00
+    }
+  ]
+}
