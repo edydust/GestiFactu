@@ -3,6 +3,16 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
+      "package_name": "es.gestifactu.deca",
+      "sha256_cert_fingerprints": [
+        "49:55:88:7D:25:C5:1B:08:F2:AA:73:16:2B:EA:27:14:50:6B:CC:C1:31:8E:93:F7:D9:41:18:26:27:31:3E:16"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
       "package_name": "es.gestifactu.app",
       "sha256_cert_fingerprints": [
         "49:55:88:7D:25:C5:1B:08:F2:AA:73:16:2B:EA:27:14:50:6B:CC:C1:31:8E:93:F7:D9:41:18:26:27:31:3E:16"

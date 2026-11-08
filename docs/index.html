@@ -68,14 +68,21 @@
         </ul>
       </section>
 
-      <section>
-        <h2 class="text-lg font-semibold text-white mb-2">6. Conservación y Eliminación de Datos</h2>
-        <p>El usuario mantiene el control absoluto sobre sus datos en todo momento:</p>
-        <ul class="list-disc list-inside mt-2 space-y-1.5 text-slate-300">
-          <li>Puede modificar o eliminar cualquier factura, cliente, porte o producto desde la propia aplicación.</li>
-          <li>Puede exportar una copia de seguridad completa en formato JSON o libros contables en Excel/CSV.</li>
-          <li>Al desinstalar la aplicación o borrar los datos de la app en los ajustes de Android, se eliminan completamente todos los datos locales.</li>
-        </ul>
+      <section id="solicitud-eliminacion">
+        <h2 class="text-lg font-semibold text-white mb-2">6. Conservación y Eliminación de Cuentas y Datos</h2>
+        <p>El usuario mantiene el control absoluto sobre sus datos en todo momento conforme a los requisitos de Google Play y las normativas de protección de datos (RGPD):</p>
+        <div class="mt-3 bg-slate-800/80 border border-slate-700 p-4 rounded-xl space-y-2 text-sm">
+          <h3 class="font-bold text-sky-400">Pasos para solicitar y realizar la eliminación de cuenta y datos:</h3>
+          <ol class="list-decimal list-inside space-y-1.5 text-slate-300">
+            <li><strong>Desde la propia aplicación GestiFactu:</strong> Acceda a <em>Ajustes / Perfil</em> y pulse en <em>"Cerrar sesión y borrar datos locales"</em> o utilice la opción <em>"Restablecer base de datos"</em>. Todos sus datos se purgarán de inmediato.</li>
+            <li><strong>Desde el sistema operativo Android:</strong> Vaya a <em>Ajustes > Aplicaciones > GestiFactu > Almacenamiento > "Borrar datos"</em> o desinstale la aplicación. Esto elimina permanentemente la base de datos local SQLite y los archivos generados.</li>
+            <li><strong>Solicitud por correo electrónico:</strong> Puede enviar un mensaje al correo del desarrollador indicado en la ficha de Google Play Store solicitando la revocación o soporte para el borrado total de sus credenciales y registros.</li>
+          </ol>
+          <div class="mt-3 pt-3 border-t border-slate-700/60 text-xs text-slate-400">
+            <p><strong>Tipos de datos que se eliminan:</strong> Cuenta de usuario local, datos fiscales del emisor, agenda de clientes, facturas, presupuestos, gastos, portes DeCA e imágenes de tickets adjuntos.</p>
+            <p class="mt-1"><strong>Periodo de retención:</strong> Inmediato (0 días). Al ser almacenamiento local autónomo, no se mantiene ninguna copia remota en servidores tras su borrado.</p>
+          </div>
+        </div>
       </section>
 
       <section>
